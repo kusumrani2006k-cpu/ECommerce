@@ -34,4 +34,4 @@ const productSchema = new Schema(
     } , 
     {timestamps : true})
     
-    const Product = mongoose.models('Product', productSchema)
+    export const Product = mongoose.models('Product', productSchema)
