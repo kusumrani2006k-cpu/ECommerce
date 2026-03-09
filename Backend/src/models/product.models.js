@@ -9,16 +9,16 @@ const productSchema = new Schema(
 
     name: {
        type: String,
-       require : true,
+       required : true,
 
     },
     price:{
        type:Number,
-        require : true,
+        required : true,
     },
     stock:{
         type:Number,
-         require : true,
+         required : true,
     },
     description:{
         type: String,
@@ -26,7 +26,7 @@ const productSchema = new Schema(
     },
     image:{
       type:String,
-      require: true,
+      required: true,
     }
 
 
@@ -34,4 +34,4 @@ const productSchema = new Schema(
     } , 
     {timestamps : true})
     
-    export const Product = mongoose.models('Product', productSchema)
+    export const Product = mongoose.model('Product', productSchema)
