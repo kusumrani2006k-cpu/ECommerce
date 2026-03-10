@@ -17,14 +17,15 @@ app.use(cookieParser())
 
 // imported routes
 import userRouter from './routes/user.routes.js'
-
+import productRouter from './routes/product.user.js'
 
 app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
 app.use("/api/v1/user", userRouter)
+app.use("/api/v1/product", productRouter)
 
-
+// http://localhost:4000/api/v1/user/register
 
 export default app
