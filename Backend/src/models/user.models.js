@@ -28,7 +28,11 @@ const userSchema = new Schema(
         profile : {
             type : String , // cloudinary
             
-        }
+        },
+        // role : {
+        //     enum : ['user', 'vendor'],
+        //     default : 'user'
+        // }
        
 
 } , 
